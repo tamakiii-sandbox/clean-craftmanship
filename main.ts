@@ -1,8 +1,10 @@
 class Stack {
-  size: number;
+  size: number
+  element: number
 
   constructor() {
     this.size = 0
+    this.element = 0
   }
 
   isEmpty() : boolean {
@@ -11,6 +13,7 @@ class Stack {
 
   push(element: number) : void {
     this.size++
+    this.element = element
   }
 
   pop() : number {
@@ -18,7 +21,7 @@ class Stack {
       throw new Error("Underflow");
     }
     this.size--
-    return -1
+    return this.element
   }
 
   getSize() : number {
