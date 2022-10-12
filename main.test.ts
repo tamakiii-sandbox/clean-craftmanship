@@ -25,3 +25,14 @@ Deno.test("after two pushes size is two", () => {
   stack.push(0)
   assertEquals(stack.getSize(), 2)
 })
+
+Deno.test("popping empty stack throws underflow", () => {
+  const stack = new Stack
+  let error = undefined
+  try {
+    stack.pop()
+  } catch (e: any) {
+    error = e
+  }
+  assertEquals(error.message, "Underflow")
+})

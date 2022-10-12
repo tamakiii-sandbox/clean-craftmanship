@@ -14,6 +14,9 @@ class Stack {
   }
 
   pop() : number {
+    if (this.size == 0) {
+      throw new Error("Underflow");
+    }
     this.size--
     return -1
   }
