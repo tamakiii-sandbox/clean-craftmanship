@@ -1,1 +1,6 @@
-console.log('hello')
+class MyStack {
+}
+
+export {
+  MyStack
+}
