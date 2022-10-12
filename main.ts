@@ -17,6 +17,10 @@ class Stack {
     this.empty = true
     return -1
   }
+
+  getSize() : number {
+    return 2
+  }
 }
 
 export {

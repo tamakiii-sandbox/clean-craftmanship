@@ -18,3 +18,10 @@ Deno.test("after one push is not empty", () => {
   stack.pop()
   assertEquals(stack.isEmpty(), true)
 })
+
+Deno.test("after two pushes size is two", () => {
+  const stack = new Stack
+  stack.push(0)
+  stack.push(0)
+  assertEquals(stack.getSize(), 2)
+})
