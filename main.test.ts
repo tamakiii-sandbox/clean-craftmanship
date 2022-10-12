@@ -6,4 +6,6 @@ Deno.test("nothing", () => {
   const stack = new Stack
   assertEquals(stack.constructor.name, "Stack")
   assertEquals(stack.isEmpty(), true)
+
+  stack.push(0);
 });
