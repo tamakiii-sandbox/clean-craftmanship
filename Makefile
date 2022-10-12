@@ -11,10 +11,10 @@ install:
 	@echo "Nothing to do with $@"
 
 run:
-	$(DENO) run src/main.ts
+	$(DENO) run main.ts
 
 test:
-	$(DENO) test test/main.test.ts
+	$(DENO) test main.test.ts
 
 clean:
 	@echo "Nothing to do with $@"
