@@ -12,7 +12,7 @@ Deno.test("Can create stack", () => {
   assertEquals(stack.isEmpty(), true)
 })
 
-Deno.test("Can create stack", () => {
+Deno.test("Can push", () => {
   const stack = new Stack
   stack.push(0);
   assertEquals(stack.isEmpty(), false)
