@@ -1,25 +1,25 @@
 class Stack {
-  empty : boolean;
+  size: number;
 
   constructor() {
-    this.empty = true
+    this.size = 0
   }
 
   isEmpty() : boolean {
-    return this.empty
+    return this.size == 0
   }
 
   push(element: number) : void {
-    this.empty = false
+    this.size++
   }
 
   pop() : number {
-    this.empty = true
+    this.size--
     return -1
   }
 
   getSize() : number {
-    return 2
+    return this.size
   }
 }
 
