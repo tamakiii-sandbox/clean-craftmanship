@@ -1,6 +1,6 @@
-class MyStack {
+class Stack {
 }
 
 export {
-  MyStack
+  Stack
 }
