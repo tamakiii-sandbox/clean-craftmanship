@@ -12,8 +12,9 @@ Deno.test("Can create stack", () => {
   assertEquals(stack.isEmpty(), true)
 })
 
-Deno.test("Can push", () => {
+Deno.test("after one push is not empty", () => {
   const stack = new Stack
-  stack.push(0);
-  assertEquals(stack.isEmpty(), false)
+  stack.push(0)
+  stack.pop()
+  assertEquals(stack.isEmpty(), true)
 })

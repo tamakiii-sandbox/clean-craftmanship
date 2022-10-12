@@ -12,6 +12,11 @@ class Stack {
   push(element: number) : void {
     this.empty = false
   }
+
+  pop() : number {
+    this.empty = true
+    return -1
+  }
 }
 
 export {
